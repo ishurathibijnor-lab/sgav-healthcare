@@ -27,7 +27,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <head>
+  <meta
+    name="google-site-verification"
+    content="vSx7SVKzaS4bdxYGenF9YGIzLnzHX4eQfSHWJWe810Y"
+  />
+</head>
+<body className="min-h-full flex flex-col">
         <CartProvider>
           {children}
         </CartProvider>
