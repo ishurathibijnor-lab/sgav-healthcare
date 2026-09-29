@@ -69,7 +69,33 @@ export default function AdminProductsPage() {
   return (
     <main className="min-h-screen bg-gray-100 px-6 py-10">
       <div className="mx-auto max-w-2xl rounded-2xl bg-white p-8 shadow-lg">
-        <h1 className="text-3xl font-bold text-black">
+       
+       <div className="mb-6 flex flex-wrap gap-3">
+  <a
+    href="/admin/orders"
+    className="rounded-lg bg-green-700 px-5 py-2 font-semibold text-white hover:bg-green-800"
+  >
+    Orders
+  </a>
+
+  <a
+    href="/admin/products"
+    className="rounded-lg border border-green-700 px-5 py-2 font-semibold text-green-700 hover:bg-green-50"
+  >
+    Products
+  </a>
+
+  <button
+    onClick={async () => {
+      await supabase.auth.signOut();
+      window.location.href = "/admin/login";
+    }}
+    className="rounded-lg bg-black px-5 py-2 font-semibold text-white hover:bg-gray-800"
+  >
+    Logout
+  </button>
+</div>
+ <h1 className="text-3xl font-bold text-black">
           Add New Product
         </h1>
 

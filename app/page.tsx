@@ -42,19 +42,37 @@ useEffect(() => {
             </p>
           </div>
 
-          <nav className="hidden gap-6 text-sm font-medium sm:flex">
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+         <nav className="flex flex-wrap items-center justify-end gap-4 text-sm font-medium sm:gap-6">
+  <a href="#home" className="hover:text-green-700">
+    Home
+  </a>
 
-            <Link
-              href="/cart"
-              className="font-semibold text-green-700 hover:underline"
-            >
-              Cart({cartCount})
-            </Link>
-          </nav>
+  <a href="#products" className="hover:text-green-700">
+    Products
+  </a>
+
+  <a href="#about" className="hover:text-green-700">
+    About
+  </a>
+
+  <a href="#contact" className="hover:text-green-700">
+    Contact
+  </a>
+
+  <Link
+    href="/track-order"
+    className="font-semibold text-green-700 hover:underline"
+  >
+    Track Order
+  </Link>
+
+  <Link
+    href="/cart"
+    className="font-semibold text-green-700 hover:underline"
+  >
+    Cart({cartCount})
+  </Link>
+</nav>
         </div>
       </header>
 

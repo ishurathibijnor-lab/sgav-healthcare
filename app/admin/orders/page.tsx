@@ -77,7 +77,13 @@ export default function AdminOrdersPage() {
             </p>
           </div>
 
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3">
+            <a
+  href="/admin/orders"
+  className="rounded-lg bg-green-700 px-5 py-2 font-semibold text-white hover:bg-green-800"
+>
+  Orders
+</a>
             <a
               href="/admin/products"
               className="rounded-lg bg-green-700 px-5 py-2 font-semibold text-white hover:bg-green-800"
