@@ -65,6 +65,12 @@ useEffect(() => {
   >
     Track Order
   </Link>
+  <Link
+  href="/admin/login"
+  className="font-semibold text-gray-700 hover:text-green-700 hover:underline"
+>
+  Admin Login
+</Link>
 
   <Link
     href="/cart"
